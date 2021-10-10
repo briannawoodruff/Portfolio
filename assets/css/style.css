@@ -335,7 +335,7 @@ a:hover a {
     .avatar {
       width: 100%;
       margin-bottom: -130px;
-      margin-left: -60px;
+      margin-left: -75px;
       margin-right: 100px;
       margin-top: -100px;
     }
@@ -360,6 +360,12 @@ a:hover a {
 
     .refactor {
       margin-top: 50px;
+    }
+
+    .contact-links {
+      text-align: center;
+      margin-top: -10px;
+      margin-left: 25px;
     }
 
     .TBA {

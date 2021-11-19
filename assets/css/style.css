@@ -70,7 +70,6 @@ p {
   font-size: 16px;
 }
 
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -101,25 +100,30 @@ main {
 
 .About-Me {
   width: 100%;
-  height: 500px;
+  height: 550px;
   margin-top: -20px;
 }
 
-.About-Me h2 {
+/* .About-Me h2 {
   padding-right: 40px;
-}
+} */
 
 .About-Me p { 
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  width: 100%;
+  margin-left: -25px;
+  margin-top: 30px;
 }
 
 .avatar {
   display: block;
+  display: flex;
+  flex-wrap: wrap;
   float: left;
-  margin-left: -25px;
-  margin-right: -100px;
-  margin-top: -10px;
-  margin-bottom: -100px;
+  margin-left: -50px;
+  margin-right: -85px;
+  margin-top: -100px;
+  /* margin-bottom: -100px; */
 }
 
 .profile-img {
@@ -150,6 +154,7 @@ main {
   padding: 10px;
   flex: 0 0 400px;
   height: 250px;
+  width: 350px;
   margin: 40px;
 }
 
@@ -165,23 +170,40 @@ main {
   text-align: center;
 }
 
-.refactor {
-  background-image: url(../images/ScreenCapture001-Horiseon-SocialSolutionServices-briannawoodruff.github.io.jpg);
+.muvd {
+  background-image: url(../images/muvd.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
-.cheatsheet {
-  background-image: url(../images/ScreenCapture-CSS-SnippetCheatsheet.jpg);
+.weather-dash {
+  background-image: url(../images/ScreenCapture-WeatherDashboard.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work-scheduler {
+  background-image: url(../images/ScreenCapture-WorkDayScheduler.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.code-quiz {
+  background-image: url(../images/ScreenCapture-CodeQuiz.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
 }
 
-.TBA {
+/* .TBA {
   background: rgba(7, 4, 21, 0.5);
-}
+} */
 
 .Contact-Me {
   width: 100%;
@@ -209,7 +231,6 @@ main {
 .Resume p {
   text-align: center;
   font-size: 25px;
-  margin-top: -15px;
 }
 
 footer {
@@ -290,23 +311,45 @@ a:hover a {
     }
 
     .About-Me {
-      height: 630px;
+      display: flex;
+      flex-wrap: wrap;
+      display: block;
+      flex-direction: column;
+      height: 800px;
     }
 
-    .Contact-Me {
+    .avatar {
+      display: flex;
+      flex-wrap: wrap;
+      float: none;
+      justify-content: center;
+      margin-left: 0px;
+      margin-top: -100px;
+      margin-right: 0;
+      margin-bottom: -125px;
+    }
+
+    section {
+      text-align: center;
+    }
+
+    .About-Me p {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+
+    .Work {
+      margin-top: 25px;
+    }
+
+     .Contact-Me {
       height: 350px;
     }
 
     .Resume {
       height: 300px;
-    }
-
-    .avatar {
-      margin-left: -100px;
-      display: block;
-      justify-content: center;
-      margin-top: -10px;
-      margin-bottom: -140px;
     }
 }
 
@@ -323,26 +366,33 @@ a:hover a {
     }
 
     nav ul li {
-      padding: 20px;
+      padding: 25px;
     }
 
     ul {
       text-align: center;
-      margin-bottom: 50px;
       margin-left: -25px;
     }
 
     .avatar {
-      width: 100%;
-      margin-bottom: -130px;
-      margin-left: -75px;
-      margin-right: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      float: none;
+      justify-content: center;
+      margin-left: 0px;
       margin-top: -100px;
+      margin-right: 0;
+      margin-bottom: -125px;
     }
 
     .About-Me {
-      margin-bottom: 80px;
-      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      display: block;
+      flex-direction: column;
+      margin-bottom: 65px;
+      margin-top: 30px;
+      height: 625px;
     }
 
     section {
@@ -355,10 +405,13 @@ a:hover a {
     }
 
     .About-Me p {
-      text-align: left;
+      flex-direction: column;
+      text-align: center;
+      margin-left: 0px;
+      margin-top: 0px;
     }
 
-    .refactor {
+    .muvd {
       margin-top: 50px;
     }
 
@@ -367,8 +420,4 @@ a:hover a {
       margin-top: -10px;
       margin-left: 25px;
     }
-
-    .TBA {
-      display: none;
-    }
-}
+  }

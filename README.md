@@ -1,4 +1,4 @@
-## <div align="center">Brianna's Portfolio</div>
+# <div align="center">Brianna's Portfolio</div>
 
 ### Website: https://briannawoodruff.github.io/Portfolio/
 
@@ -8,6 +8,6 @@ A professional portfolio featuring 4 exemplary projects, links to my updated Git
 <img src="assets\images\Screen Capture-BriannaWoodruff-ProfessionalPortfolio.jpg" title="Portfolio Screenshot">
 
 ***
-### This website is mobile-friendly design:
+### This website is mobile-friendly:
 
 <img src="assets\images\ScreenCapture-BriannaWoodruff-MobileFriendly.jpg" title="Mobile-Friendly Screenshot">

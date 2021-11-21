@@ -32,26 +32,25 @@ header {
   justify-content: space-around;
   padding: 20px;
   padding-bottom: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Encode Sans SC', sans-serif;
   color: var(--light);
 }
 
 header h1 {
   display: inline-block;
-  font-size: 55px;
+  font-size: 70px;
   padding-top: 15px;
 }
 
-nav,
-.Contact-Me {
-  padding-top: 20px;
+nav {
+  font-size: 30px;
   margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  font-size: 25px;
+  margin-top: 30px
 }
 
 nav ul,
 .Contact-Me ul {
+  font-family: 'Tenor Sans', sans-serif;
   list-style-type: none;
 }
 
@@ -67,7 +66,7 @@ a {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 main {
@@ -76,7 +75,7 @@ main {
 }
 
 .card {
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: 'Tenor Sans', sans-serif;
   width: 100%;
   margin: 0;
   color: var(--light);
@@ -87,7 +86,7 @@ main {
   border-top: 5px solid var(--border);
   border-bottom: 5px solid var(--border);
   margin-bottom: 20px;
-  font-size: 36px;
+  font-size: 40px;
   padding: 20px;
   padding-left: 40px;
 }
@@ -100,18 +99,13 @@ main {
 
 .About-Me {
   width: 100%;
-  height: 550px;
+  height: 675px;
   margin-top: -20px;
 }
 
-/* .About-Me h2 {
-  padding-right: 40px;
-} */
-
 .About-Me p { 
-  /* margin-right: 20px; */
-  width: 100%;
-  margin-left: -25px;
+  margin-left: 20px;
+  margin-right: 40px;
   margin-top: 30px;
 }
 
@@ -120,14 +114,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   float: left;
+  height: 515px;
   margin-left: -50px;
   margin-right: -85px;
-  margin-top: -100px;
-  /* margin-bottom: -100px; */
+  margin-top: -65px;
 }
 
 .profile-img {
-  transform: scale(0.5);
+  transform: scale(0.55);
   border: 5px solid var(--border);
   box-shadow: inset 0px 0px 8px
    var(--border), 0 0 20px
@@ -159,8 +153,9 @@ main {
 }
 
 .card-header {
+  font-family: 'Tenor Sans', sans-serif;
   margin-top: -30px;
-  font-size: 20px;
+  font-size: 25px;
   border-style: solid;
   border-color: var(--border);
   color: var(--light);
@@ -201,13 +196,13 @@ main {
   background-size: cover;
 }
 
-/* .TBA {
-  background: rgba(7, 4, 21, 0.5);
-} */
-
 .Contact-Me {
   width: 100%;
   height: 325px;
+}
+
+.Contact-Me li {
+  font-size: 30px;
 }
 
 .contact-links{
@@ -230,15 +225,16 @@ main {
 
 .Resume p {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 footer {
   position: absolute;
+  color: var(--hover);
   bottom: 0px;
   width: 100%;
   padding: 30px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Tenor Sans', sans-serif;
   text-align: center;
 }
 
@@ -249,18 +245,13 @@ footer {
     transition: all 0.5s ease-in-out;
 }
 
-.profile-img:hover,
-.profile-img:hover .profile-img {
-  transition: all 0.5s ease-in-out;
-  transform: scale(0.55);
-}
-
 .code-card:hover, 
 .code-card:hover .card-header {
   box-shadow: inset 0px 0px 8px
    var(--hover), 0 0 15px
    var(--hover);
    border-color:  var(--hover);
+   color: var(--hover);
 }
 
 .code-card:hover, 
@@ -274,14 +265,10 @@ a:hover a {
    color: var(--hover); 
 }
 
-.refactor:hover,
-.refactor:hover .refactor {
-  background-image: linear-gradient(rgba(254, 141, 99, 0.25), rgba(254, 141, 99, 0.25)), url(../images/ScreenCapture001-Horiseon-SocialSolutionServices-briannawoodruff.github.io.jpg);
-}
-
-.cheatsheet:hover,
-.cheatsheet:hover .cheatsheet {
-  background-image: linear-gradient(rgba(254, 141, 99, 0.25), rgba(254, 141, 99, 0.25)), url(../images/ScreenCapture-CSS-SnippetCheatsheet.jpg);
+.all:hover, 
+.all:hover .all {
+   text-shadow: 0 0 15px var(--hover);
+   color: var(--hover); 
 }
 
 .Contact-Me p:hover, 
@@ -297,7 +284,6 @@ a:hover a {
   -webkit-user-select: all;
   -ms-user-select: all;
   user-select: all;
-  text-decoration: underline;
 }
 
 
@@ -308,6 +294,14 @@ a:hover a {
       flex-direction: column;
       align-items: center;
       width: 100%;
+    }
+
+    header h1 {
+      text-align: center;
+    }
+
+    nav ul {
+      text-align: center;
     }
 
     .About-Me {
@@ -323,6 +317,7 @@ a:hover a {
       flex-wrap: wrap;
       float: none;
       justify-content: center;
+      height: 610px;
       margin-left: 0px;
       margin-top: -100px;
       margin-right: 0;
@@ -338,6 +333,7 @@ a:hover a {
       text-align: center;
       margin-left: 0px;
       margin-top: 0px;
+      margin-right: 0px;
     }
 
     .Work {
@@ -363,10 +359,11 @@ a:hover a {
 
     header h1 {
       text-align: center;
+      margin-bottom: -20px;
     }
 
     nav ul li {
-      padding: 25px;
+      padding: 20px;
     }
 
     ul {
@@ -392,7 +389,7 @@ a:hover a {
       flex-direction: column;
       margin-bottom: 65px;
       margin-top: 30px;
-      height: 625px;
+      height: 685px;
     }
 
     section {

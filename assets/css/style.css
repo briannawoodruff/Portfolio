@@ -115,8 +115,6 @@ h1 {
   padding: 20px;
 }
 
-
-
 .About-Me {
   width: 100%;
   height: 675px;
@@ -157,6 +155,8 @@ h1 {
 .container {
   display: flex;
   flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* align-content: center; */
   justify-content: space-evenly;
   margin-bottom: 45px;
 }
@@ -266,15 +266,11 @@ footer p {
 }
 
 /* Pseudo-elements */
-.code-card,
-.card-header {
-    transition: all 0.5s ease-in-out;
-}
-
 .code-card:hover, 
 .code-card:hover .card-header {
-  box-shadow: inset 0px 0px 8px
-   var(--hover), 0 0 15px
+  /* cards glow when hover */
+  box-shadow: inset 0px 0px 5px
+   var(--hover), 0 0 5px
    var(--hover);
    border-color:  var(--hover);
    color: var(--hover);
@@ -282,24 +278,29 @@ footer p {
 
 .code-card:hover, 
 .code-card:hover {
+  /* card gets bigger */
   transform: scale(1.1);
+  /* expands card */
+  transition: all 0.5s ease-in-out;
+  /* width: 50vw; */
+  /* align-content: center; */
 }
 
 a:hover, 
 a:hover a {
-   text-shadow: 0 0 15px var(--hover);
+   text-shadow: 0 0 5px var(--hover);
    color: var(--hover); 
 }
 
 .all:hover, 
 .all:hover .all {
-   text-shadow: 0 0 15px var(--hover);
+   text-shadow: 0 0 5px var(--hover);
    color: var(--hover); 
 }
 
 .Contact-Me p:hover, 
 .Contact-Me p:hover .Contact-Me p {
-   text-shadow: 0 0 15px var(--hover);
+   text-shadow: 0 0 5px var(--hover);
    color: var(--hover); 
 }
 
@@ -429,7 +430,7 @@ a:hover a {
       flex-direction: column;
       margin-bottom: 65px;
       margin-top: 30px;
-      height: 685px;
+      height: 725px;
     }
 
     section {

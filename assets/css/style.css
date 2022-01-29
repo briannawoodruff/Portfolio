@@ -74,6 +74,10 @@ main {
   flex-wrap: wrap;
 }
 
+h1 {
+  text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.844);
+}
+
 .card {
   font-family: 'Tenor Sans', sans-serif;
   width: 100%;
@@ -89,6 +93,22 @@ main {
   font-size: 40px;
   padding: 20px;
   padding-left: 40px;
+}
+
+#aboutmetitle {
+  text-shadow: 225px 0px 2px rgba(255, 255, 255, 0.289), 450px 0px 3px rgba(255, 255, 255, 0.179);
+}
+
+#projectstitle {
+  text-shadow: 190px 0px 2px rgba(255, 255, 255, 0.289), 375px 0px 3px rgba(255, 255, 255, 0.179);
+}
+
+#contactmetitle {
+  text-shadow: 265px 0px 2px rgba(255, 255, 255, 0.289), 525px 0px 3px rgba(255, 255, 255, 0.179);
+}
+
+#resumetitle {
+  text-shadow: 190px 0px 2px rgba(255, 255, 255, 0.289), 375px 0px 3px rgba(255, 255, 255, 0.179);
 }
 
 .card p {
@@ -173,23 +193,24 @@ main {
   background-size: cover;
 }
 
-.weather-dash {
-  background-image: url(../images/ScreenCapture-WeatherDashboard.jpg);
+.note-taker {
+  background-image: url(../images/ScreenCapture-NoteTakerApp.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
 }
 
-.work-scheduler {
-  background-image: url(../images/ScreenCapture-WorkDayScheduler.jpg);
+.unpuffd {
+  background-image: url(../images/ScreenCapture-Unpuffd.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
 }
 
-.code-quiz {
-  background-image: url(../images/ScreenCapture-CodeQuiz.jpg);
+.tech-blog {
+  background-image: url(../images/ScreenCapture-the-mvc-techblog.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
@@ -230,14 +251,19 @@ main {
 
 footer {
   position: absolute;
-  color: var(--hover);
+  color: var(--border);
   bottom: 0px;
   width: 100%;
+  height: 15px;
   padding: 30px;
   font-family: 'Tenor Sans', sans-serif;
   text-align: center;
+  background-color: rgba(7, 4, 21, 0.282);
 }
 
+footer p {
+  margin-top: -10px;
+}
 
 /* Pseudo-elements */
 .code-card,
@@ -324,6 +350,13 @@ a:hover a {
       margin-bottom: -125px;
     }
 
+    #aboutmetitle,
+    #projectstitle,
+    #contactmetitle,
+    #resumetitle {
+      text-shadow: none;
+    }
+
     section {
       text-align: center;
     }
@@ -380,6 +413,13 @@ a:hover a {
       margin-top: -100px;
       margin-right: 0;
       margin-bottom: -125px;
+    }
+
+    #aboutmetitle,
+    #projectstitle,
+    #contactmetitle,
+    #resumetitle {
+      text-shadow: none;
     }
 
     .About-Me {

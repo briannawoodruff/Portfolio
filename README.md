@@ -10,4 +10,10 @@ A professional portfolio featuring 4 exemplary projects, links to my updated Git
 ***
 ### This website is mobile-friendly:
 
-<img src="assets\images\ScreenCapture-BriannaWoodruff-MobileFriendly.jpg" title="Mobile-Friendly Screenshot">
+<div align="center">
+<img src="assets\images\ScreenCapture-BriannaWoodruff-MobileFriendly.jpg" title="Mobile-Friendly Screenshot"></div>
+
+ <br />
+
+## Questions:
+If you have any questions, you can contact me at briannaewoodruff@gmail.com or visit my GitHub [briannawoodruff](https://github.com/briannawoodruff).

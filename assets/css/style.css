@@ -40,6 +40,7 @@ header h1 {
   display: inline-block;
   font-size: 70px;
   padding-top: 15px;
+  text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.844);
 }
 
 nav {
@@ -62,7 +63,8 @@ nav ul li,
 
 a {
   color: var(--light);
-  text-decoration: none
+  text-decoration: none;
+  text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.789);
 }
 
 .fab,
@@ -71,6 +73,7 @@ a {
   text-align: center;
   font-size: 60px;
   padding: 10px;
+  text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.789);
 }
 
 p {
@@ -80,10 +83,6 @@ p {
 main {
   display: flex;
   flex-wrap: wrap;
-}
-
-h1 {
-  text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.844);
 }
 
 .card {
@@ -164,25 +163,26 @@ h1 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
-  /* align-content: center; */
+  flex-direction: column;
+  align-content: center;
   justify-content: space-evenly;
-  margin-bottom: 45px;
 }
 
 .code-card {
   border-style: solid;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.597);
   border-color: var(--border);
   border-width: 2px;
   padding: 10px;
   flex: 0 0 400px;
-  height: 250px;
-  width: 350px;
+  height: 40vh;
+  width: 55vw;
   margin: 40px;
 }
 
 .card-header {
   font-family: 'Tenor Sans', sans-serif;
+  border-radius: 6px;
   margin-top: -30px;
   font-size: 25px;
   border-style: solid;
@@ -196,14 +196,26 @@ h1 {
 
 .muvd {
   background-image: url(../images/muvd.jpg);
+  background-color: white;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
+}
+
+.muvd-text {
+  text-decoration: none;
+  color: black;
+  text-shadow: none;
+  display: block;
+  margin-left: 500px;
+  margin-top: 40px;
+  margin-right: 25px;
 }
 
 .note-taker {
   background-image: url(../images/ScreenCapture-NoteTakerApp.jpg);
+  background-color: white;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
@@ -212,18 +224,40 @@ h1 {
 
 .unpuffd {
   background-image: url(../images/ScreenCapture-Unpuffd.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-}
-
-.tech-blog {
-  background-image: url(../images/ScreenCapture-the-mvc-techblog.jpg);
+  background-color: rgba(11, 1, 0);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+
+.unpuffd-text {
+  text-decoration: none;
+  color: white;
+  text-shadow: none;
+  display: block;
+  margin-left: 525px;
+  margin-top: 40px;
+  margin-right: 25px;
+}
+
+.tech-blog {
+  background-image: url(../images/ScreenCapture-the-mvc-techblog.jpg);
+  background-color: rgb(108, 107, 103);;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.techblog-text {
+  text-decoration: none;
+  color: white;
+  text-shadow: none;
+  display: block;
+  margin-left: 475px;
+  margin-top: 40px;
+  margin-right: 25px;
 }
 
 .Contact-Me {
@@ -240,7 +274,6 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px;
-  /* margin-top: 75px; */
 }
 
 .contact-links li {
@@ -249,6 +282,7 @@ h1 {
 
 .email {
   flex-direction: column;
+  text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.789);
 }
 
 .Resume {
@@ -279,41 +313,43 @@ footer p {
 }
 
 /* Pseudo-elements */
-.code-card:hover, 
-.code-card:hover .card-header {
+/* .code-card:hover .card-header, */
+/* .code-card:hover .card-header { */
   /* cards glow when hover */
-  box-shadow: inset 0px 0px 5px
-   var(--hover), 0 0 5px
+  /* box-shadow: inset 0px 0px 1px
+   var(--hover), 0 0 2px
    var(--hover);
-   border-color:  var(--hover);
-   color: var(--hover);
-}
+   border-color:  var(--hover); */
+   /* color: var(--hover); */
+/* } */
 
 .code-card:hover, 
 .code-card:hover {
-  /* card gets bigger */
-  transform: scale(1.1);
   /* expands card */
   transition: all 0.5s ease-in-out;
-  /* width: 50vw; */
-  /* align-content: center; */
+  width: 80vw;
+  position: relative;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
 }
 
 a:hover, 
 a:hover a {
-   text-shadow: 0 0 5px var(--hover);
+   text-shadow: 0 0 1px var(--hover);
    color: var(--hover); 
 }
 
 .all:hover, 
 .all:hover .all {
-   text-shadow: 0 0 5px var(--hover);
+   text-shadow: 0 0 1px var(--hover);
    color: var(--hover); 
 }
 
-.Contact-Me p:hover, 
-.Contact-Me p:hover .Contact-Me p {
-   text-shadow: 0 0 5px var(--hover);
+.Contact-Me li:hover, 
+.Contact-Me li:hover .Contact-Me li {
+   text-shadow: 0 0 3px var(--hover);
    color: var(--hover); 
 }
 
@@ -328,7 +364,7 @@ a:hover a {
 
 
 /* Media Queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 815px) {
     body,
     main {
       flex-direction: column;
@@ -364,6 +400,31 @@ a:hover a {
       margin-right: 0;
       margin-bottom: -125px;
     }
+
+    .code-card {
+      height: 40vh;
+      width: 400px;
+    }
+
+    /* removes added text on hover */
+    .unpuffd-text,
+    .unpuffd-text:hover,
+    .unpuffd-text:hover {
+      display: none;
+    }
+
+    .code-card:hover, 
+    .code-card:hover {
+      /* card gets bigger */
+      transform: scale(1.025);
+      /* expands card */
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      height: 40vh;
+      width: 400px;
+      background-size: cover;
+      background-position: top;
+}
 
     #aboutmetitle,
     #projectstitle,
@@ -451,7 +512,7 @@ a:hover a {
       margin-bottom: 65px;
       margin-top: 30px;
       /* height: 725px; */
-      height: 80vh;
+      height: 85vh;
     }
 
     section {
